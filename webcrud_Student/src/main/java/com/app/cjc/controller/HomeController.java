@@ -22,7 +22,7 @@ public class HomeController {
 	@GetMapping("/msg")
 	public String showMassage()
 	{
-		return "Hello world....!"
+		return "Hello world....!";
 	}
 	
 	@PostMapping("/add")
