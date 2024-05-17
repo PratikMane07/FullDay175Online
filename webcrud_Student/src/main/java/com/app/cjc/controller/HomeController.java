@@ -18,6 +18,12 @@ public class HomeController {
 	
 	@Autowired
 	HomeserviceInt hs;
+
+	@GetMapping("/msg")
+	public String showMassage()
+	{
+		return "Hello world....!"
+	}
 	
 	@PostMapping("/add")
 	public void addSingleStudent(@RequestBody Student s)
